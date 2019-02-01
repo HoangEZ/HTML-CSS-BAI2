@@ -33,7 +33,7 @@
 <body>
   <div class="wrapper">
     <!-- include header.html -->
-    <header class="header">
+    <header id="scroll-header" class="header">
     <div class="header-menu">
         <div class="container">
             <h1 class="logo">
@@ -45,14 +45,14 @@
                 <input type="checkbox" class="menu-toggle" id="header-menu">
                 <label for="header-menu" class="btn btn-bar fas fa-bars"></label>
                 <ul class="menu-list">
-                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Features</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Gallery</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Video</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Prices</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Testimonials</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Download</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Contact</a></li>
+                    <li class="menu-item"><a href="#scroll-header" class="menu-link active">Home</a></li>
+                    <li class="menu-item"><a href="#scroll-features" class="menu-link">Features</a></li>
+                    <li class="menu-item"><a href="#scroll-gallery" class="menu-link">Gallery</a></li>
+                    <li class="menu-item"><a href="#scroll-video" class="menu-link">Video</a></li>
+                    <li class="menu-item"><a href="#scroll-prices" class="menu-link">Prices</a></li>
+                    <li class="menu-item"><a href="#scroll-testimonial" class="menu-link">Testimonials</a></li>
+                    <li class="menu-item"><a href="#scroll-download" class="menu-link">Download</a></li>
+                    <li class="menu-item"><a href="#scroll-contact" class="menu-link">Contact</a></li>
                 </ul>
             </div>
         </div><!--/.container-->
@@ -90,7 +90,7 @@
 </header>
 
     <!-- include feature.html -->
-    <section class="container features">
+    <section id="scroll-features" class="container features">
     <h3 class="text-center title">Summarise the features</h3>
     <p class="text-center caption">summarise what your product is all about </p>
     <div class="feature-list">
@@ -118,7 +118,7 @@
 </section>
 
     <!-- include gallery.html -->
-    <section class="gallery container">
+    <section id="scroll-gallery" class="gallery container">
     <h4 class="title text-center">Show the gallery</h4>
     <p class="text-center caption">summarise what your product is all about </p>
     <div class="gallery-list">
@@ -175,7 +175,7 @@
 </section>
 
     <!-- include video.html -->
-    <section class="container video">
+    <section id="scroll-video" class="container video">
     <img class="video-bg" src="images/video_bg.png" alt="video">
     <a href="#" class="btn btn-play fas fa-play text-center"></a>
     <h2 class="title text-center">Watch the best Technology in <span class="video-em">Action</span></h2>
@@ -189,7 +189,7 @@
 </section>
 
     <!-- include price.html -->
-    <section class="container price">
+    <section id="scroll-prices" class="container price">
     <h3 class="title text-center">choose your price</h3>
     <p class="caption text-center" text-center">summarise what your product is all about </p>
     <div class="price-list">
@@ -233,7 +233,7 @@
 </section>
 
     <!-- include testimonials.html -->
-    <section class="testimonial">
+    <section id="scroll-testimonial" class="testimonial">
     <h3 class="title text-center">Testimonials</h3>
     <div class="testimonial-list">
         <div class="testimonial-item">
@@ -256,13 +256,13 @@
 </section>
 
     <!-- include download.html -->
-    <section class="download">
+    <section id="scroll-download" class="download">
     <h2 class="download-title text-center">Do you like this app</h2>
     <div class="download-button"><a href="#" class="btn btn-download">Download now</a></div>
 </section>
     
     <!-- include download.html -->
-    <div class="contact">
+    <div id="scroll-contact" class="contact">
     <img class="map" src="images/map_bg.png" alt="map">
     <form action="#" class="contact-form">
         <h2 class="contact-heading">Contact</h2>
@@ -297,7 +297,7 @@
 <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 <!-- endbuild -->
 <!-- build:js script/script.min.js -->
-<script type="text/javascript" src="scripts/align.js"></script>
+<script type="text/javascript" src="scripts/scrollspy.js"></script>
 <!-- endbuild -->
 </body>
 </html>

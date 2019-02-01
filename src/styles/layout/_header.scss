@@ -55,6 +55,9 @@
                 }
             }
         }
+        .active{
+            @extend .menu-link:hover;
+        }
     }
     .slide-image{
         width: 100%;
