@@ -12,6 +12,13 @@
     .title{
         text-transform: initial;
     }
+    .testimonial-content{
+        width: 50%;
+        position: absolute;
+        top:0;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
     .testimonial-item{
         display: flex;
         justify-content: space-between;
@@ -19,11 +26,6 @@
         font-weight: 700;
         color: #4bcaff;
         font-size: 14px;
-        width: 50%;
-        position: absolute;
-        top:0;
-        left: 50%;
-        transform: translate(-50%,0);
     }
     .testimonial-article{
         width: 70%;

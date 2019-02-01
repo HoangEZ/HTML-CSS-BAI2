@@ -45,15 +45,24 @@
 }
 @media screen and (max-width: 1250px){
     .header{
+        .slide-content{
+            top: 40%;
+        }
         .slide-item{
             .slide-article{
                 font-size: 16px;
-                top:20%;
                 .slide-title{
                     font-size: 25px;
                 }
                 .btn{
+                    font-size: 10px;
                     padding: 10px 20px;
+                }
+                .logo-item{
+                    padding: 15px;
+                    &:before{
+                        font-size: 15px;
+                    }
                 }
             }
         }
@@ -81,12 +90,6 @@
                 }
                 .btn{
                     font-size: 10px;
-                }
-                .logo-item{
-                    padding: 15px;
-                    &:before{
-                        font-size: 15px;
-                    }
                 }
             }
         }

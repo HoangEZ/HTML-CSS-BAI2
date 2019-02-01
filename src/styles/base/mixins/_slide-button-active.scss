@@ -1,0 +1,5 @@
+@mixin slide-button-active() {
+    background-color: rgb(75,202,255);
+    border-color: #4bcaff;
+    transform: scale(1.2);
+}
