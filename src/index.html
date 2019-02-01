@@ -25,6 +25,7 @@
   <!-- build:css(.) style/vendor.min.css -->
 <link rel="stylesheet" type="text/css" media="screen" href="node_modules/bootstrap/dist/css/bootstrap.css" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <!-- endbuild -->
 <!-- build:css(.tmp) style/style.min.css -->
 <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
@@ -58,26 +59,70 @@
         </div><!--/.container-->
     </div>
     <div class="slide">
-            <img src="images/slide_bg.png" class="slide-image" alt="Simple-beautiful">
-        <div class="slide-item">
-            <article class="slide-article">
-                <h2 class="slide-title"><a href="#" class="title-link">Simple, Beautiful <span class="title-em">and Amazing</span></a></h2>
-                <p class="slide-desc text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Nunc eget nunc vitae tellus luctus ullamcorper. 
-                    Nam porttitor ullamcorper felis at convallis. 
-                    Aenean ornare vestibulum nisi fringilla lacinia. 
-                    Nullam pulvinar sollicitudin velit id laoreet. 
-                    Quisque non rhoncus sem.</p>
-                <div class="button-group">
-                    <a href="#" class="btn btn-download">Download</a>
-                    <a href="#" class="btn btn-learnmore">Learn more</a>
-                </div>
-                <div class="logo-list">
-                    Available on:
-                    <a href="#" class="logo-item fab fa-apple"></a>
-                    <a href="#" class="logo-item fab fa-android"></a>
-                </div>
-            </article>
+        <img src="images/slide_bg.png" class="slide-image" alt="Simple-beautiful">
+        <div class="slide-content">
+            <div class="slide-item">
+                <article class="slide-article">
+                    <h2 class="slide-title"><a href="#" class="title-link">Simple, Beautiful <span class="title-em">and Amazing</span></a></h2>
+                    <p class="slide-desc text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Nunc eget nunc vitae tellus luctus ullamcorper. 
+                        Nam porttitor ullamcorper felis at convallis. 
+                        Aenean ornare vestibulum nisi fringilla lacinia. 
+                        Nullam pulvinar sollicitudin velit id laoreet. 
+                        Quisque non rhoncus sem.</p>
+                    <div class="button-group">
+                        <a href="#" class="btn btn-download">Download</a>
+                        <a href="#" class="btn btn-learnmore">Learn more</a>
+                    </div>
+                    <div class="logo-list">
+                        Available on:
+                        <a href="#" class="logo-item fab fa-apple"></a>
+                        <a href="#" class="logo-item fab fa-android"></a>
+                    </div>
+                </article>
+            </div><!--/.slide-item-->
+
+            <div class="slide-item">
+                <article class="slide-article">
+                    <h2 class="slide-title"><a href="#" class="title-link">Simple, Beautiful <span class="title-em">and Amazing</span></a></h2>
+                    <p class="slide-desc text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Nunc eget nunc vitae tellus luctus ullamcorper. 
+                        Nam porttitor ullamcorper felis at convallis. 
+                        Aenean ornare vestibulum nisi fringilla lacinia. 
+                        Nullam pulvinar sollicitudin velit id laoreet. 
+                        Quisque non rhoncus sem.</p>
+                    <div class="button-group">
+                        <a href="#" class="btn btn-download">Download</a>
+                        <a href="#" class="btn btn-learnmore">Learn more</a>
+                    </div>
+                    <div class="logo-list">
+                        Available on:
+                        <a href="#" class="logo-item fab fa-apple"></a>
+                        <a href="#" class="logo-item fab fa-android"></a>
+                    </div>
+                </article>
+            </div><!--/.slide-item-->
+
+            <div class="slide-item">
+                <article class="slide-article">
+                    <h2 class="slide-title"><a href="#" class="title-link">Simple, Beautiful <span class="title-em">and Amazing</span></a></h2>
+                    <p class="slide-desc text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Nunc eget nunc vitae tellus luctus ullamcorper. 
+                        Nam porttitor ullamcorper felis at convallis. 
+                        Aenean ornare vestibulum nisi fringilla lacinia. 
+                        Nullam pulvinar sollicitudin velit id laoreet. 
+                        Quisque non rhoncus sem.</p>
+                    <div class="button-group">
+                        <a href="#" class="btn btn-download">Download</a>
+                        <a href="#" class="btn btn-learnmore">Learn more</a>
+                    </div>
+                    <div class="logo-list">
+                        Available on:
+                        <a href="#" class="logo-item fab fa-apple"></a>
+                        <a href="#" class="logo-item fab fa-android"></a>
+                    </div>
+                </article>
+            </div><!--/.slide-item-->
         </div>
         <span class="chev-left fas fa-chevron-left"></span>
         <span class="chev-right fas fa-chevron-right"></span>
@@ -295,9 +340,11 @@
   <!-- build:js(.) script/vendor.min.js -->
 <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
 <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <!-- endbuild -->
 <!-- build:js script/script.min.js -->
 <script type="text/javascript" src="scripts/scrollspy.js"></script>
+<script src="scripts/slide.js"></script>
 <!-- endbuild -->
 </body>
 </html>

@@ -68,12 +68,15 @@
             @extend .control-btn-item:hover;
         }
     }
-    .slide-item{
+    .slide-content{
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
+    }
+    /*.slide-item{
+        position: relative;
         .slide-article{
             font-size: 18px;
             font-weight: 300;
@@ -128,7 +131,7 @@
                 }
             }
         }
-    }
+    }*/
     .chev-left, .chev-right{
         position: absolute;
         top: 50%;
