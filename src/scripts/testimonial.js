@@ -22,7 +22,7 @@ $(document).ready(function(){
     $('.button-item').click(function(e){
         e.preventDefault();
         var index = this.children[0].dataset.index;
-        $('.testimonial-content').slick('slickGoTo',index-1);
+        $('.testimonial-content').slick('slickGoTo',index);
         $('.button-item').removeClass('active');
         $(this).addClass('active');
     })
