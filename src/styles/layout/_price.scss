@@ -1,0 +1,92 @@
+.price{
+    margin-top: 50px;
+    .caption{
+        margin-bottom: 60px;
+    }
+    .price-list{
+        display: flex;
+        justify-content: space-between;
+    }
+    .price-item{
+        width: 30%;
+        text-align: center;
+        border: 1px solid #dad7d7;
+        transition: all 200ms ease-in-out;
+        &:nth-of-type(3n){
+            .price-amount, .purchase{
+                background-color: #fd7c00;
+            }
+        }
+        &:nth-of-type(3n+1){
+            .price-amount, .purchase{
+                background-color: #91c46b;
+            }
+        }
+        &:nth-of-type(3n+2){
+            .price-amount, .purchase{
+                background-color: #4bcaff;
+            }
+        }
+        &:hover{
+            transform: scale(1,1.2);
+            .price-item-title, .price-amount,.price-detail{
+                transform: scale(1,0.8);
+            }
+            .price-item-title{
+                font-size: 22px;
+            }
+            &:nth-of-type(3n){
+                .price-item-title,.price-detail{
+                    color: #fd7c00;
+                }
+            }
+            &:nth-of-type(3n+2){
+                .price-item-title,.price-detail{
+                    color: #4bcaff;
+                }
+            }
+            &:nth-of-type(3n+1){
+                .price-item-title,.price-detail{
+                    color: #91c46b;
+                }
+            }
+        }
+    }
+    .price-amount{
+        font-size: 50px;
+        font-family: "Droid Sans";
+        font-weight: 700;
+        color: #fff;
+        text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+    }
+    .price-item-title{
+        background-color: #f9f9f9;
+        padding: 20px 0;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 700;
+        color: #d7d7d7;
+        box-sizing: border-box;
+    }
+    .price-detail{
+        color: #d7d7d7;
+        font-weight: 700;
+    }
+    .price-item-title, .price-amount,.price-detail{
+        transition: all 200ms ease-in-out;
+    }
+    .price-detail-list{
+        padding: 10px 0;
+        li{
+            padding: 10px 0;
+            font-size: 18px;
+        }
+    }
+    .purchase{
+        margin-bottom: 20px;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 15px;
+    }
+}

@@ -1,29 +1,35 @@
 // ----------------------------------------------------------------------
 // Font
 // ----------------------------------------------------------------------
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&subset=vietnamese');
 
 // ----------------------------------------------------------------------
 // Base
 // ----------------------------------------------------------------------
 @import "base/mixins";
 @import "base/variables";
-@import "base/extends";
+//@import "base/extends";
 @import "base/reset";
-@import "base/fonts";
-@import "base/utility";
-@import "base/button";
+//@import "base/fonts";
+//@import "base/utility";
+//@import "base/button";
 
 // ----------------------------------------------------------------------
 // Layout
 // ----------------------------------------------------------------------
 @import "layout/header";
+@import "layout/features";
+@import "layout/gallery";
+@import "layout/video";
+@import "layout/price";
+@import "layout/testimonials";
+@import "layout/download";
+@import "layout/contact";
 @import "layout/footer";
 
 // ----------------------------------------------------------------------
 // Custom
 // ----------------------------------------------------------------------
-@import "custom/custom-plugin";
+//@import "custom/custom-plugin";
 
 // ----------------------------------------------------------------------
 // Pages

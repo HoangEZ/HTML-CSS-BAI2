@@ -1,0 +1,40 @@
+.video{
+    position: relative;
+    .video-bg{
+        width: 100%;
+    }
+    .btn-play{
+        color: #ffffff;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        font-size: 25px;
+        transform: translate(-50%,-50%);
+        border: 1.5px solid #fff;
+        padding: 10px 25px;
+    }
+    .title{
+        position: absolute;
+        top: 40%;
+        text-align: center;
+        width: 100%;
+        text-transform: initial;
+        font-size: 48px;
+        color: #ffffff;
+        font-weight: 300;
+    }
+    .video-em{
+        font-weight: 700;
+    }
+    .video-description{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: #ffffff;
+        width: 45%;
+        font-size: 18px;
+        font-weight: 300;
+        margin-top: 25px;
+        transform: translate(-50%,0);
+    }
+}

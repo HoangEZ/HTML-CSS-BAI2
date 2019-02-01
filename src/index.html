@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- include head.html -->
-  <title>HTML Boilerplate</title>
+  <title>HTML & CSS Bài 2</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
@@ -19,9 +19,12 @@
 <meta property="og:type" content="">
 <meta property="og:url" content="" />
 <!-- Google Font -->
+<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Droid Sans' rel='stylesheet' type='text/css'>
   <!-- include styles.html -->
   <!-- build:css(.) style/vendor.min.css -->
 <link rel="stylesheet" type="text/css" media="screen" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 <!-- endbuild -->
 <!-- build:css(.tmp) style/style.min.css -->
 <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
@@ -30,46 +33,261 @@
 <body>
   <div class="wrapper">
     <!-- include header.html -->
-    <header class="header-container">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <p>Header Container</p>
-      </div>
+    <header class="header">
+    <div class="header-menu">
+        <div class="container">
+            <h1 class="logo">
+                <a href="#" class="logo-link">
+                    <img src="/images/bazinger.png" alt="bazinger" class="logo-img">
+                </a>
+            </h1>
+            <div class="menu">
+                <input type="checkbox" class="menu-toggle" id="header-menu">
+                <label for="header-menu" class="btn btn-bar fas fa-bars"></label>
+                <ul class="menu-list">
+                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Features</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Gallery</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Video</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Prices</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Testimonials</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Download</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Contact</a></li>
+                </ul>
+            </div>
+        </div><!--/.container-->
     </div>
-  </div>
+    <div class="slide">
+            <img src="images/slide_bg.png" class="slide-image" alt="Simple-beautiful">
+        <div class="slide-item">
+            <article class="slide-article">
+                <h2 class="slide-title"><a href="#" class="title-link">Simple, Beautiful <span class="title-em">and Amazing</span></a></h2>
+                <p class="slide-desc text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Nunc eget nunc vitae tellus luctus ullamcorper. 
+                    Nam porttitor ullamcorper felis at convallis. 
+                    Aenean ornare vestibulum nisi fringilla lacinia. 
+                    Nullam pulvinar sollicitudin velit id laoreet. 
+                    Quisque non rhoncus sem.</p>
+                <div class="button-group">
+                    <a href="#" class="btn btn-download">Download</a>
+                    <a href="#" class="btn btn-learnmore">Learn more</a>
+                </div>
+                <div class="logo-list">
+                    Available on:
+                    <a href="#" class="logo-item fab fa-apple"></a>
+                    <a href="#" class="logo-item fab fa-android"></a>
+                </div>
+            </article>
+        </div>
+        <span class="chev-left fas fa-chevron-left"></span>
+        <span class="chev-right fas fa-chevron-right"></span>
+        <div class="control-btn-list">
+            <a href="#" class="control-btn-item active">1</a>
+            <a href="#" class="control-btn-item">2</a>
+            <a href="#" class="control-btn-item">3</a>
+        </div>
+    </div>
 </header>
 
-    <!-- include banner.html -->
-    <section class="banner-container">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <p class="title-block">Banner</p>
-      </div>
+    <!-- include feature.html -->
+    <section class="container features">
+    <h3 class="text-center title">Summarise the features</h3>
+    <p class="text-center caption">summarise what your product is all about </p>
+    <div class="feature-list">
+        <div class="feature-item text-center">
+            <a href="#" class="icon fas fa-layer-group"></a>
+            <h4 class="feature-item-title"><a class="feature-item-link" href="#">Attractive Layout</a></h4>
+            <p class="feature-item-description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+        </div>
+        <div class="feature-item text-center">
+            <a href="#" class="icon fas fa-mobile"></a>
+            <h4 class="feature-item-title"><a href="#" class="feature-item-link">Fresh design</a></h4>
+            <p class="feature-item-description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+        </div>
+        <div class="feature-item text-center">
+            <a href="#" class="icon fas fa-comments"></a>
+            <h4 class="feature-item-title"><a href="#" class="feature-item-link">Multipurpose</a></h4>
+            <p class="feature-item-description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+        </div>
+        <div class="feature-item text-center">
+            <a href="#" class="icon fas fa-desktop"></a>
+            <h4 class="feature-item-title"><a href="#" class="feature-item-link">Easy to customize</a></h4>
+            <p class="feature-item-description">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+        </div>
     </div>
-  </div>
 </section>
 
-    <main class="main-container">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h4 class="title-block">HTML Boilerplate</h4>
-          </div>
+    <!-- include gallery.html -->
+    <section class="gallery container">
+    <h4 class="title text-center">Show the gallery</h4>
+    <p class="text-center caption">summarise what your product is all about </p>
+    <div class="gallery-list">
+        <div class="gallery-item">
+            <div class="gallery-item-header">
+                <img class="gallery-image" src="images/gallery_bg.png" alt="gallery">
+                <a href="#" class="gallery-link fas fa-plus"></a>
+                <h5 class="gallery-caption">Screen shot #1</h5>
+            </div>
+            <article class="gallery-description text-center">
+                    Nunc cursus libero purus ac congue arcu cursus ut sed vitae
+                     pulvinar massa idporta nequetiam elerisque mi id faucibus 
+                     iaculis vitae pulvinar.
+            </article>
         </div>
-      </div>
-    </main>
+
+        <div class="gallery-item">
+            <div class="gallery-item-header">
+                <img class="gallery-image" src="images/gallery_bg.png" alt="gallery">
+                <a href="#" class="gallery-link fas fa-plus"></a>
+                <h5 class="gallery-caption">Screen shot #2</h5>
+            </div>
+            <article class="gallery-description  text-center">
+                    Nunc cursus libero purus ac congue arcu cursus ut sed vitae
+                        pulvinar massa idporta nequetiam elerisque mi id faucibus 
+                        iaculis vitae pulvinar.
+            </article>
+        </div>
+        <div class="gallery-item">
+            <div class="gallery-item-header">
+                <img class="gallery-image" src="images/gallery_bg.png" alt="gallery">
+                <a href="#" class="gallery-link fas fa-plus"></a>
+                <h5 class="gallery-caption">Screen shot #3</h5>
+            </div>
+            <article class="gallery-description  text-center">
+                    Nunc cursus libero purus ac congue arcu cursus ut sed vitae
+                        pulvinar massa idporta nequetiam elerisque mi id faucibus 
+                        iaculis vitae pulvinar.
+            </article>
+        </div>
+        <div class="gallery-item">
+            <div class="gallery-item-header">
+                <img class="gallery-image" src="images/gallery_bg.png" alt="gallery">
+                <a href="#" class="gallery-link fas fa-plus"></a>
+                <h5 class="gallery-caption">Screen shot #4</h5>
+            </div>
+            <article class="gallery-description  text-center">
+                    Nunc cursus libero purus ac congue arcu cursus ut sed vitae
+                        pulvinar massa idporta nequetiam elerisque mi id faucibus 
+                        iaculis vitae pulvinar.
+            </article>
+        </div>
+    </div>
+</section>
+
+    <!-- include video.html -->
+    <section class="container video">
+    <img class="video-bg" src="images/video_bg.png" alt="video">
+    <a href="#" class="btn btn-play fas fa-play text-center"></a>
+    <h2 class="title text-center">Watch the best Technology in <span class="video-em">Action</span></h2>
+    <article class="video-description text-center">Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit. 
+        Nunc eget nunc vitae tellus luctus ullamcorper. 
+        Nam porttitor ullamcorper felis at convallis. 
+        Aenean ornare vestibulum nisi fringilla lacinia. 
+        Nullam pulvinar sollicitudin velit id laoreet. 
+        Quisque non rhoncus sem.</article>
+</section>
+
+    <!-- include price.html -->
+    <section class="container price">
+    <h3 class="title text-center">choose your price</h3>
+    <p class="caption text-center" text-center">summarise what your product is all about </p>
+    <div class="price-list">
+        <div class="price-item">
+            <h4 class="price-item-title">Basic package</h4>
+            <div class="price-amount">20$</div>
+            <article class="price-detail">
+                <ul class="price-detail-list">
+                    <li>Nullam suscipit vitae</li>
+                    <li>Etiam faucibus</li>
+                    <li>Vivamus viverra</li>
+                </ul>
+                <a href="#" class="purchase btn">Purchase</a>
+            </article>
+        </div>
+        <div class="price-item">
+            <h4 class="price-item-title">Professional package</h4>
+            <div class="price-amount">25$</div>
+            <article class="price-detail">
+                <ul class="price-detail-list">
+                    <li>Nullam suscipit vitae</li>
+                    <li>Etiam faucibus</li>
+                    <li>Vivamus viverra</li>
+                </ul>
+                <a href="#" class="purchase btn">Purchase</a>
+            </article>
+        </div>
+        <div class="price-item">
+            <h4 class="price-item-title">Professional package</h4>
+            <div class="price-amount">30$</div>
+            <article class="price-detail">
+                <ul class="price-detail-list">
+                    <li>Nullam suscipit vitae</li>
+                    <li>Etiam faucibus</li>
+                    <li>Vivamus viverra</li>
+                </ul>
+                <a href="#" class="purchase btn">Purchase</a>
+            </article>
+        </div>
+    </div>
+</section>
+
+    <!-- include testimonials.html -->
+    <section class="testimonial">
+    <h3 class="title text-center">Testimonials</h3>
+    <div class="testimonial-list">
+        <div class="testimonial-item">
+            <img class="avatar" src="/images/testimonial_bg.png" alt="Username">
+            <article class="testimonial-article">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Praesent lobortis lectus eget libero blandit venenatis. 
+                        In blandit tortor vel congue malesuada. Suspendisse 
+                        molestie lobortis lorem dignissim pretium.</p>
+                <p class="text-right font-italic">John Doe</p>
+                <p class="text-right font-italic">from some company</p>
+            </article>
+        </div>
+    </div>
+    <ul class="button-list">
+        <li class="button-item active"><a class="button-link" href="#"></a></li>
+        <li class="button-item"><a class="button-link" href="#"></a></li>
+        <li class="button-item"><a class="button-link" href="#"></a></li>
+    </ul>
+</section>
+
+    <!-- include download.html -->
+    <section class="download">
+    <h2 class="download-title text-center">Do you like this app</h2>
+    <div class="download-button"><a href="#" class="btn btn-download">Download now</a></div>
+</section>
+    
+    <!-- include download.html -->
+    <div class="contact">
+    <img class="map" src="images/map_bg.png" alt="map">
+    <form action="#" class="contact-form">
+        <h2 class="contact-heading">Contact</h2>
+        <div class="form-group">
+            <input type="text" name="txt_name" placeholder="Your name" class="form-control text-center">
+        </div>
+        <div class="form-group">
+            <input type="email" name="txt_email" placeholder="Your email" class="form-control text-center">
+        </div>
+        <div class="form-group">
+            <input type="text" name="txt_subject" placeholder="Your subject" class="form-control text-center">
+        </div>
+        <div class="form-group">
+            <textarea name="txt_msg" placeholder="Your message" cols="30" rows="5" class="form-control text-center txt-msg"></textarea>
+        </div>
+        <div class="form-group text-center">
+            <input type="submit" value="Send" class="btn btn-send">
+        </div>
+    </form>
+</div>
 
     <!-- include footer.html -->
-    <footer class="footer-container">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <p>Footer Container</p>
-      </div>
-    </div>
-  </div>
+    <footer class="footer">
+<p>Copyright © 2013 | bazinger | All Rights Reserved</p>
+<p><a href="#" class="footer-link">Terms of Service</a> | <a href="#" class="footer-link">Privacy Policy</a></p>
 </footer>
   </div>
 
@@ -79,7 +297,7 @@
 <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 <!-- endbuild -->
 <!-- build:js script/script.min.js -->
-<script type="text/javascript" src="scripts/script.js"></script>
+<script type="text/javascript" src="scripts/align.js"></script>
 <!-- endbuild -->
 </body>
 </html>
