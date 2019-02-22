@@ -23,14 +23,20 @@
             resize: none;
         }
         .btn-send{
-            color: #72b3cc;
+            color: #fff;
+            
             font-weight: 700;
             font-size: 15px;
-            text-shadow: 0 -1px 0 #000;
-            background-color: #414042;
-            border-bottom: 4px solid #000;
+            background-color: rgb(75,202,255);
+            box-shadow: 0 0 0 2px #fff;
             border-radius: 7px;
             width: 150px;
+            &:hover{
+                color: #72b3cc;
+                text-shadow: 0 -1px 0 #000;
+                background-color: #414042;
+                box-shadow: 0 4px 0 0 #000;
+            }
         }
     }
 }

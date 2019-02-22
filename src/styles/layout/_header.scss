@@ -79,7 +79,6 @@
         .slide-article{
             font-size: 18px;
             font-weight: 300;
-            
             color: #ffffff;
             .slide-title{
                 font-weight: 300;
@@ -96,16 +95,17 @@
                 color: #ffffff;
                 text-transform: uppercase;
                 padding: 15px 40px;
-                margin: 10px 0;
+                margin: 10px 5px;
                 border-radius: 10px;
+                box-shadow: 0 0 0 2px #fff;
+                &:hover{
+                    background-color: #4bcaff;
+                    padding-bottom: 14px;
+                    box-shadow: 0 4px 0 0 #277697;
+                }
             }
             .btn-download{
-                border: 2px solid #fff;
-                margin-right: 30px;
-            }
-            .btn-learnmore{
-                background-color: #4bcaff;
-                border-bottom: 3px solid #277697;
+                margin-right: 25px;
             }
             .logo-list{
                 display: flex;

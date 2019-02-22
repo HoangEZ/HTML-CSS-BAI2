@@ -13,14 +13,19 @@
         .btn-download{
             display: inline-block;
             padding: 5px;
-            background-color: #4bcaff;
+            color: #fff;
             text-transform: uppercase;
             font-size: 15px;
             font-weight: 700;
             padding: 10px 25px;
             margin: 30px 0;
-            border-bottom: 4px solid #277697;
+            box-shadow: 0 0 0 3px #fff;
             border-radius: 10px;
+            &:hover{
+                background-color: #4bcaff;
+                border-color: rgba(255,255,255,0);
+                box-shadow: 0 4px 0 0 #277697;
+            }
         }
     }
 }
